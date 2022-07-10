@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.15" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.defaultHandlerModifiers": 1
+			"JavaCodeGenerator.bindingInitMethod": true
+			"JavaCodeGenerator.defaultVariableModifiers": 1
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$locationPolicy": 2
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "rootPathName"
+				"text": "路径"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 10
+				"width": 30
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "selectRootPath"
+				"text": "选择文件夹"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 445
+				"y": 10
+				"width": 100
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "rootPath"
+				"autoscrolls": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 10
+				"width": 390
+				"height": 25
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 50
+				"width": 80
+				"height": 165
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar2"
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 55, 20 )
+			"size": new java.awt.Dimension( 565, 440 )
+		} )
+	}
+}
