@@ -1,15 +1,19 @@
 package net.zhuys;
 
-import net.zhuys.ui.GuiNotepad;
 
+import net.zhuys.ui.MainUi;
 
 /**
  * @Description: ${NAME}
  * @Author: Allz
  * @Date: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}
  */
-public class Main {
+public class FileHelper {
     public static void main(String[] args) {
-        new GuiNotepad();
+        MainUi generalUI = new MainUi();
+        generalUI.setVisible(true);
+        generalUI.setBounds(615, 98, 836, 908);
+        generalUI.setSize(600,  500);
+        //new GuiNotepad();
     }
 }
